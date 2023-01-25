@@ -4,7 +4,7 @@ const PlayerList = ({ players, title }) => {
   let navigate = useNavigate();
   let { id } = useParams();
   return (
-    <div width="100%">
+    <div>
       <div className="card text-bg-dark border-0">
         <img
           src="../images/bg.jpg"
