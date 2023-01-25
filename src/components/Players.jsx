@@ -5,7 +5,7 @@ const Players = () => {
     const {data} = useFetch('http://localhost:3000/players')
     return ( 
         <div className="container">
-            <PlayerList players={data} title="Available Players for Transfer"/>
+            <PlayerList players={data} title="AVAILABLE PLAYERS FOR TRANSFER"/>
         </div>
      );
 }
