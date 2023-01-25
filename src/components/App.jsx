@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Home />
-      <Players /> */}
+      <Home />
+      
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/players" element={<Players />} />
