@@ -40,6 +40,7 @@ const Player = () => {
               <p className="lead fw-bolder">
                 <ul>
                 <li>Club: {player.club}</li>
+                <li>D.O.B: {player.dob}</li>
                 <li>League: {player.league}</li> 
                 <li>Salary: {player.salary}</li>
                 </ul>
