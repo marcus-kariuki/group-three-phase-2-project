@@ -3,7 +3,7 @@ const useFetch = (url) => {
     const [data, setData]= useState([])
 
     useEffect(()=>{
-        fetch(url)
+        fetch(url,)
         .then((res)=> res.json())
         .then((fetchedData)=>{
             setData(fetchedData)
