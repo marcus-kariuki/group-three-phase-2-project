@@ -13,19 +13,14 @@
       "description": "Born and raised in central Argentina, Messi relocated to Spain at the age of 13 to join Barcelona, for whom he made his competitive debut aged 17 in October 2004. He established himself as an integral player for the club within the next three years, and in his first uninterrupted season in 2008–09 he helped Barcelona achieve the first treble in Spanish football; that year, aged 22, Messi won his first Ballon d'Or. Three successful seasons followed, with Messi winning four consecutive Ballons d'Or, making him the first player to win the award four times. During the 2011–12 season, he set the La Liga and European records for most goals scored in a single season, while establishing himself as Barcelona's all-time top scorer. The following two seasons, Messi finished second for the Ballon d'Or behind Cristiano Ronaldo (his perceived career rival), before regaining his best form during the 2014–15 campaign, becoming the all-time top scorer in La Liga and leading Barcelona to a historic second treble, after which he was awarded a fifth Ballon d'Or in 2015. Messi assumed captaincy of Barcelona in 2018, and in 2019 he won a record sixth Ballon d'Or. Out of contract, he signed for Paris Saint-Germain in August 2021.",
       "club": "Paris Saint-Germain F.C ",
       "value": "55.7M",
-      "strong foot":"Left",
+      "foot":"Left",
       "salary": "$800,000",
-      "stats": [
-          {
-              "Pace":85,
-              "Shooting":92,
-              "Passing":91,
-              "Dribbling":95,
-              "Defending":34,
-              "Physical":65
-          }
-      ]
-      
+      "pace":85,
+      "shooting":92,
+      "passing":91,
+      "dribbling":95,
+      "defending":34,
+      "physical":65
     },
 
     {
@@ -41,19 +36,14 @@
       "description": "An English professional footballer who plays as a forward for Premier League club Manchester United and the England national team. He is known for his attacking, dribbling, composure, and athleticism.Rashford scored on his England debut in May 2016, becoming the youngest English player to score in his first senior international match. He has since appeared at two UEFA European Championship; 2016, where he was the tournament's youngest player, and 2020, where he appeared in the Final as England finished as runners-up to Italy. He has also represented England at the 2018 and 2022 FIFA World Cup.",
       "club": "Manchester United",
       "value": "49.5M",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$140,000",
-      "stats": [
-          {
-              "Pace":87,
-              "Shooting":82,
-              "Passing":76,
-              "Dribbling":83,
-              "Defending":42,
-              "Physical":73
-          }
-      ]
-      
+      "pace":87,
+      "shooting":82,
+      "passing":76,
+      "dribbling":83,
+      "defending":42,
+      "physical":73
     },
 
     {
@@ -69,18 +59,14 @@
       "description": "A German professional footballer who plays as an attacking midfielder or forward. He captains Bundesliga club Borussia Dortmund and plays for the Germany national team.Reus spent his youth career at Borussia Dortmund, prior to leaving for Rot Weiss Ahlen. He joined Borussia Mönchengladbach in 2009, and had his most successful season in 2012, scoring 18 goals and providing 12 assists in the Bundesliga to help Borussia Mönchengladbach secure a place in the following season's UEFA Champions League. Reus returned to his hometown club Borussia Dortmund at the end of that season, helping the club reach the 2013 UEFA Champions League Final in his first season. With Dortmund, Reus won three DFL-Supercups (in 2013, 2014 and 2019), and the DFB-Pokal in 2017 and 2021, he has scored over 150 goals for the club, and is one of only three players to have reached 100 Bundesliga goals and assists each. ",
       "club": "Borussia Dortmund",
       "value": "33.5M",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$78,000",
-      "stats": [
-          {
-              "Pace":70,
-              "Shooting":84,
-              "Passing":84,
-              "Dribbling":85,
-              "Defending":53,
-              "Physical":65
-          }
-      ]
+      "pace":70,
+      "shooting":84,
+      "passing":84,
+      "dribbling":85,
+      "defending":53,
+      "physical":65
       
     },
 
@@ -97,18 +83,15 @@
       "description": "Napoli attacker Victor Osimhen has played in the vast majority of the club's Serie A games in 2022/2023, making 15 appearances overall and playing 1,253 minutes. He has been selected in the starting XI in 14 of these appearances across their 19 fixtures and been used as a substitute on one occasion.Osimhen last appeared in the league on January 21 for Napoli against Salernitana. In that game he found the back of the net for his team in their 2-0 win. He has now scored in three Serie A appearances in a row. The attacker has netted 13 Serie A goals this season, which is the highest tally in the competition in 2022/2023. He has been shown a yellow card once.",
       "club": "Napoli",
       "value": "58M",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$72,000",
-      "stats": [
-          {
-              "Pace":90,
-              "Shooting":85,
-              "Passing":65,
-              "Dribbling":78,
-              "Defending":40,
-              "Physical":81
-          }
-      ]
+      "pace":90,
+      "shooting":85,
+      "passing":65,
+      "dribbling":78,
+      "defending":40,
+      "physical":81
+     
       
     },
 
@@ -125,18 +108,15 @@
       "description": "A French professional footballer who plays as a centre-back for La Liga club Barcelona and the France national team.On 29 July 2022, Barcelona announced an agreement with Sevilla for the transfer of Koundé.Koundé missed Barcelona's first match of the La Liga season against Rayo Vallecano as the club could not register him as they were over the league's salary cap limit. He also missed Barcelona's second league match against Real Sociedad on 21 August for the same reason. Kounde was registered with La Liga on 26 August and made his official debut for the club two days later in a 4–0 win over Real Valladolid at the Camp Nou.",
       "club": "Barcelona",
       "value": "57.5M",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$150,000",
-      "stats": [
-          {
-              "Pace":86,
-              "Shooting":45,
-              "Passing":64,
-              "Dribbling":74,
-              "Defending":85,
-              "Physical":78
-          }
-      ]
+      "pace":86,
+      "shooting":45,
+      "passing":64,
+      "dribbling":74,
+      "defending":85,
+      "physical":78
+          
       
     },
 
@@ -154,18 +134,14 @@
       "description": "A professional footballer who plays as a centre-back for Serie A club AC Milan and the England national team. Born in Canada, he represents England at international level.On 22 January 2021, Tomori joined Serie A club AC Milan on loan for the remainder of the 2020–21 season with an option to buy. Four days later, he made his debut in the Coppa Italia quarter-final against Inter Milan in the Derby della Madonnina, coming on as a substitute for the injured Simon Kjær in a 2–1 away defeat. On 9 May, Tomori scored his first goal for Milan in a 3–0 away league win over rivals Juventus. Tomori became the first Englishman to score for Milan since David Beckham in 2009 and it was the club's first away win against Juventus in the league since March 2011.",
       "club":"Milan", 
       "value": "60.5M",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$75,000",
-      "stats": [
-          {
-              "Pace":86,
-              "Shooting":40,
-              "Passing":60,
-              "Dribbling":66,
-              "Defending":86,
-              "Physical":81
-          }
-      ]
+      "pace":86,
+      "shooting":40,
+      "passing":60,
+      "dribbling":66,
+      "defending":86,
+      "physical":81
       
     },
 
@@ -183,18 +159,14 @@
       "description": "Also known as El Machín, is a Mexican professional footballer who plays for Eredivisie club Ajax and the Mexico national team. Mainly a defensive midfielder, he is also capable of playing as a centre-back.Álvarez was born in Tlalnepantla de Baz, a municipality just north of Mexico City, to Adriana Velázquez and Evaristo Álvarez.[5] As a child he would work for his family's business of manufacturing football jerseys for local teams, which he cites as his first foray into the sport.[6] At age 14, Álvarez tried out for the youth team of Pachuca, though Álvarez did not make the team due to his short stature.[6] Contemplating quitting football, to the resistance of his parents who believed he had the talent to pursue his dream of playing professionally, Álvarez decided to try out for Club América's youth team, eventually making the team after a three-month tryout. He would make it to the daily team practices by way of a three-to-four-hour round trip commute from his home in Tlalnepantla and the club's training ground in Coapa. According to Álvarez, he would spend almost 70 percent of his monthly salary toward transportation.", 
       "club":"Ajax",
       "value": "27.5M",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$16,500",
-      "stats": [
-          {
-              "Pace":71,
-              "Shooting":57,
-              "Passing":67,
-              "Dribbling":69,
-              "Defending":82,
-              "Physical":86
-          }
-      ]
+      "pace":71,
+      "shooting":57,
+      "passing":67,
+      "dribbling":69,
+      "defending":82,
+      "physical":86
       
     },
 
@@ -212,19 +184,14 @@
       "description": "A professional footballer who plays as a midfielder or winger for Fenerbahçe in the Süper Lig. Born in the Netherlands, Kadıoğlu plays for the Turkey national team.In July 2018, Kadıoğlu signed for Turkish Süper Lig club Fenerbahçe[3] under Phillip Cocu, famous Dutch football manager of the club at the time. In his first season, he played mostly in Fenerbahçe U21 team and made his debut for the senior squad on December 20, 2018, coming off the bench in a Turkish Cup match against Giresunspor.[4] He also played 11 matches with Fenerbahçe U21 in U21 Ligi.", 
       "club":"Fenerbahce",
       "value": "6.5M",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$38,500",
-      "stats": [
-          {
-              "Pace":82,
-              "Shooting":63,
-              "Passing":72,
-              "Dribbling":80,
-              "Defending":65,
-              "Physical":66
-          }
-      ]
-      
+      "pace":82,
+      "shooting":63,
+      "passing":72,
+      "dribbling":80,
+      "defending":65,
+      "physical":66
     },
 
 
@@ -241,18 +208,14 @@
       "description": "A professional footballer who plays as a right-back for Premier League club Aston Villa and the Poland national team.On 3 September 2020, Aston Villa announced the signing of Cash on a five-year contract for a reported £14 million, rising to £16 million.[23][24] Cash made his debut for the club on 21 September 2020, in a 1–0 home victory against Sheffield United.[2On 18 September 2021, Cash scored his first goal for Aston Villa in a 3–0 Premier League victory over Everton.[26] On 26 February 2022, Cash scored a long-range effort in an away victory over Brighton & Hove Albion which was nominated for Premier League Goal of the Month. ", 
       "club":"Aston Villa",
       "value": "22M",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$65,000",
-      "stats": [
-          {
-              "Pace":80,
-              "Shooting":67,
-              "Passing":71,
-              "Dribbling":85,
-              "Defending":74,
-              "Physical":76
-          }
-      ]
+      "pace":80,
+      "shooting":67,
+      "passing":71,
+      "dribbling":85,
+      "defending":74,
+      "physical":76
       
     },
 
@@ -269,19 +232,14 @@
       "description": "An Argentine professional footballer who plays as a right-back for River Plate.[3]Herrera started his senior career with San Lorenzo, having had youth spells with Textil Mandiyú, Boca Unidos and Rivadavia.[4][5] He was selected in the club's senior squad during the 2018–19 Argentine Primera División campaign, with his professional debut arriving on 21 September 2018 during a win over Patronato at the Estadio Pedro Bidegain; he played the full ninety minutes as San Lorenzo won 3–2.[3][6] Herrera ended 2018–19 with three goals, split across the Primera División, the Copa Argentina and the Copa Libertadores.[3]", 
       "club":"River Plate",
       "value": "3.3M",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$9,500",
-      "stats": [
-          {
-              "Pace":80,
-              "Shooting":62,
-              "Passing":61,
-              "Dribbling":73,
-              "Defending":67,
-              "Physical":70
-          }
-      ]
-      
+      "pace":80,
+      "shooting":62,
+      "passing":61,
+      "dribbling":73,
+      "defending":67,
+      "physical":70
     },
 
     
@@ -298,18 +256,14 @@
       "description": "A Uruguayan professional footballer who plays as a goalkeeper for Turkish club Galatasaray, whom he captains, and the Uruguay national team.He is considered one of the finest goalkeepers of his generation and was ranked as high as sixth-best in the world by the International Federation of Football History & Statistics in 2011.A full international since 2009, Muslera has earned over 130 caps for Uruguay. He has played in five Copa América tournaments, winning the title in 2011, and played every minute in goal for Uruguay as the country's undisputed number one in the 2010, 2014, and 2018 FIFA World Cups, helping his nation to fourth place in the 2010 edition.", 
       "club":"Galatasaray",
       "value": "550K",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$35,500",
-      "stats": [
-          {
-              "Diving":76,
-              "Handling":80,
-              "Kicking":72,
-              "Reflexes":77,
-              "Speed":50,
-              "Positioning":83
-          }
-      ]
+      "diving":76,
+      "handling":80,
+      "kicking":72,
+      "reflexes":77,
+      "speed":50,
+      "positioning":83
       
     },
 
@@ -327,18 +281,14 @@
       "description": "An Argentine professional footballer who plays as a right-back for River Plate.[3]Herrera started his senior career with San Lorenzo, having had youth spells with Textil Mandiyú, Boca Unidos and Rivadavia.[4][5] He was selected in the club's senior squad during the 2018–19 Argentine Primera División campaign, with his professional debut arriving on 21 September 2018 during a win over Patronato at the Estadio Pedro Bidegain; he played the full ninety minutes as San Lorenzo won 3–2.[3][6] Herrera ended 2018–19 with three goals, split across the Primera División, the Copa Argentina and the Copa Libertadores.[3]", 
       "club":"Inter Milan",
       "value": "4M",
-      "strong foot":"Right",
+      "foot":"Right",
       "salary": "$42,000",
-      "stats": [
-          {
-            "Diving":79,
-            "Handling":79,
-            "Kicking":65,
-            "Reflexes":84,
-            "Speed":41,
-            "Positioning":90
-          }
-      ]  
+      "diving":79,
+      "handling":79,
+      "kicking":65,
+      "reflexes":84,
+      "speed":41,
+      "positioning":90
     }
   ]
 }
