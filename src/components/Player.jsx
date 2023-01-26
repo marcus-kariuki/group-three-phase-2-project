@@ -33,11 +33,13 @@ const Player = () => {
     const ShowPlayer = () => {
         return (
           <>
-            <div className="col-md-6 img-fluid img-thumbnail">
+            <div className="col-md-6 ">
               <img
                 src={player.image}
                 alt={player.name}
-                height="200px"
+                height="700px"
+                width="550px"
+    
 
               />
             </div>
@@ -67,11 +69,6 @@ const Player = () => {
                 ${player.value}
               </h3>
               <p className="lead">{player.description}</p>
-  
-              <button className="btn btn-info px-4 py-2" 
-              onClick={()=>addPlayer(player)}>
-                Bid for Player
-              </button>
             </div>
           </>
         );

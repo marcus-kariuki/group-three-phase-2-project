@@ -46,11 +46,12 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav-link">
-              <NavLink className="nav-link" to="/about">
+              
+            </li>
+            <NavLink className="nav-link" to="/about">
 
                 About
               </NavLink>
-            </li>
             <NavLink className="nav-link" to="/newplayer">
                 Add Player
               </NavLink>
@@ -60,11 +61,6 @@ function Navbar() {
               
             </li>
           </ul>
-          <div className="buttons mx-2">
-            <NavLink to="/cart" className="btn btn-outline-dark">
-              <i className="fa fa-shopping-cart me-1"></i>Bids ({state.length})
-            </NavLink>
-          </div>
         </div>
       </div>
     </nav>

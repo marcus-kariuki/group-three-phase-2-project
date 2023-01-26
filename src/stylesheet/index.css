@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -46,6 +48,33 @@ code {
   box-sizing: border-box;
   display: block;
 }
+
+.about-container {
+  background-color: #F5F5F5;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-info {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: rgb(240, 19, 19);
+  
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+
+
 
 
 
