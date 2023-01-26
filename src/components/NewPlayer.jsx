@@ -12,8 +12,8 @@ const NewPlayer = () => {
     const [dob, setDob]= useState('')
     const [description, setDescription]= useState('')
     const [club, setClub]= useState('')
-    const [playerValue, setPlayerValue]= useState('')
-    const [foot, setFoot]= useState('')
+    const [value, setValue]= useState('')
+    const [foot, setFoot]= useState('Right')
     const [salary, setSalary]= useState(0)
     const [pace, setPace]= useState(0)
     const [shooting, setShooting]= useState(0)
@@ -24,7 +24,7 @@ const NewPlayer = () => {
     
     const handleSubmit = (ev)=>{
         ev.preventDefault()
-        const player = {type, name, height, image, nationality, position, league, dob, description, club, playerValue, foot, salary, pace, shooting, passing, dribbling, defending, physical} 
+        const player = {type, name, height, image, nationality, position, league, dob, description, club, value, foot, salary, pace, shooting, passing, dribbling, defending, physical} 
 
         fetch('http://localhost:3000/players', {
             method: 'POST', 
@@ -44,8 +44,9 @@ const NewPlayer = () => {
             <form action="POST" onSubmit={handleSubmit}>
                 {/* type-select */}
                 <div className="mb-3">
-                <label htmlFor="type" className="form-label ">Type</label>
+                <label htmlFor="type" className="form-label">Type</label>
                 <select 
+                    className="form-select"
                     name="" 
                     id="type"
                     value={type}
@@ -62,6 +63,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="name" className="form-label">Name</label>
                 <input 
+                    className="form-control"
                     type="text" 
                     id="name" 
                     value={name}
@@ -73,7 +75,8 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="height" className="form-label">Height</label>
                 <input 
-                    type="number" 
+                    className="form-control"
+                    type="text" 
                     id="height"
                     value={height}
                     onChange={(ev)=> setHeight(ev.target.value)}
@@ -84,6 +87,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="image" className="form-label">Image URL</label>
                 <input 
+                    className="form-control"
                     type="url" 
                     id="image"
                     value={image}
@@ -95,6 +99,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="nationality" className="form-label">nationality</label>
                 <input 
+                    className="form-control"
                     type="text" 
                     id="nationality"
                     value={nationality}
@@ -106,6 +111,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="position" className="form-label">position</label>
                 <input 
+                    className="form-control"
                     type="text" 
                     id="position"
                     value={position}
@@ -117,6 +123,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="league" className="form-label">league</label>
                 <input 
+                    className="form-control"
                     type="text" 
                     id="league"
                     value={league}
@@ -128,6 +135,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="dob" className="form-label">dob</label>
                 <input 
+                    className="form-control"
                     type="text" 
                     id="dob"
                     value={dob}
@@ -140,6 +148,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="club" className="form-label">club</label>
                 <input 
+                    className="form-control"
                     type="text" 
                     id="club"
                     value={club}
@@ -151,17 +160,19 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="value" className="form-label">value</label>
                 <input 
-                    type="number" 
+                    className="form-control"
+                    type="text" 
                     id="value"
-                    value={playerValue}
-                    onChange={(ev)=> setPlayerValue(ev.target.value)}
+                    value={value}
+                    onChange={(ev)=> setValue(ev.target.value)}
                 />
                 </div>
 
                 {/* foot-select */}
                 <div className="mb-3">
                 <label htmlFor="foot" className="form-label">Foot</label>
-                <select 
+                <select
+                    className="form-select" 
                     name="" 
                     id="foot" 
                     value={foot}
@@ -176,6 +187,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="salary" className="form-label">salary</label>
                 <input 
+                    className="form-control"
                     type="text" 
                     id="salary"
                     value={salary}
@@ -187,6 +199,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="pace" className="form-label">pace</label>
                 <input 
+                    className="form-control"
                     type="number" 
                     id="pace"
                     value={pace}
@@ -198,6 +211,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="shooting" className="form-label">shooting</label>
                 <input 
+                    className="form-control"
                     type="number" 
                     id="shooting"
                     value={shooting}
@@ -209,6 +223,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="passing" className="form-label">passing</label>
                 <input 
+                    className="form-control"
                     type="number" 
                     id="passing"
                     value={passing}
@@ -220,6 +235,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="dribbling" className="form-label">dribbling</label>
                 <input 
+                    className="form-control"
                     type="number" 
                     id="dribbling"
                     value={dribbling}
@@ -231,6 +247,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="defending" className="form-label">defending</label>
                 <input 
+                    className="form-control"
                     type="number" 
                     id="defending"
                     value={defending}
@@ -243,6 +260,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="physical" className="form-label">physical</label>
                 <input 
+                    className="form-control"
                     type="number" 
                     id="physical"
                     value={physical}
@@ -254,6 +272,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="description" className="form-label">Description</label>
                 <textarea 
+                    className="form-control"
                     name="" 
                     id="description" 
                     cols="50" 
