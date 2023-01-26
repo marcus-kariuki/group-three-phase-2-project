@@ -18,7 +18,7 @@ After unbundling the project:
 1. Run `npm install` in your terminal.
 
 Make sure to open
-[https://dimba-api.herokuapp.com/${id}](https://dimba-api.herokuapp.com/${id}) in the
+[https://group-three-phase-2-project-5shocnyjp-marcus-kariuki.vercel.app/](https://group-three-phase-2-project-5shocnyjp-marcus-kariuki.vercel.app/) in the
 browser to verify that your backend is working before you proceed!
 
 The app uses [Bootstrap](https://bootstrap-ui.com/) for styling. If you see any
