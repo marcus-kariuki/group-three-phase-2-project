@@ -46,30 +46,21 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav-link">
-              <NavLink className="nav-link" to="/about">
+              
+            </li>
+            <NavLink className="nav-link" to="/about">
 
                 About
               </NavLink>
-            </li>
+            <NavLink className="nav-link" to="/newplayer">
+                Add Player
+              </NavLink>
             <li className="nav-item">
             <p>{aboutData.title}</p>
             <p>{aboutData.description}</p>
-              <NavLink className="nav-link" to="/newplayer">
-                Add Player
-              </NavLink>
+              
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-dark" type="submit">
-              Search
-            </button>
-          </form>
           <div className="buttons mx-2">
             <NavLink to="/cart" className="btn btn-outline-dark">
               <i className="fa fa-shopping-cart me-1"></i>Bids ({state.length})

@@ -33,11 +33,13 @@ const Player = () => {
     const ShowPlayer = () => {
         return (
           <>
-            <div className="col-md-6 img-fluid img-thumbnail">
+            <div className="col-md-6 ">
               <img
                 src={player.image}
                 alt={player.name}
-                height="200px"
+                height="700px"
+                width="550px"
+    
 
               />
             </div>

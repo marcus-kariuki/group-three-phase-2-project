@@ -33,6 +33,7 @@ const PlayerList = ({ players, title }) => {
         </h2>
         {/* Search player */}
         <input 
+            className="form-control me-2"
             type="text" 
             placeholder="Search player..."
             onChange={(ev)=> setSearchTerm(ev.target.value)}
@@ -45,12 +46,17 @@ const PlayerList = ({ players, title }) => {
             }
         }).map((player) => {
           const handleDelete = () => {
+
             fetch(
               `http://localhost:3000/players/${player.id}`,
               {
                 method: "DELETE",
               }
-            );
+            )
+            // .then((res)=> res.json())
+            // .then((data)=>{
+
+            // })
           };
           return (
             <div
