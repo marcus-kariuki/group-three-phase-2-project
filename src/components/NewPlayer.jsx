@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 
 const NewPlayer = () => {
@@ -21,6 +22,8 @@ const NewPlayer = () => {
     const [dribbling, setDribbling]= useState(0)
     const [defending, setDefending]= useState(0)
     const [physical, setPhysical]= useState(0)
+
+    let navigate = useNavigate()
     
     const handleSubmit = (ev)=>{
         ev.preventDefault()
@@ -32,6 +35,7 @@ const NewPlayer = () => {
             body: JSON.stringify(player)
         })
         .then((res)=>{
+            navigate("/")
             return res.json()
         })
         .then((data)=> console.log(data))
