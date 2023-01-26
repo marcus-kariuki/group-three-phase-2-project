@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import axios from 'axios';
+import { useSelector } from "react-redux";
 
 
 function Navbar() {
   const [aboutData, setAboutData] = useState({});
+  const state = useSelector((state)=> state.handleCart)
 
   useEffect(() => {
     axios.get('http://localhost:3000/players')
@@ -15,7 +17,6 @@ function Navbar() {
         console.log(err);
       });
   }, []);
-
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
@@ -58,9 +59,20 @@ function Navbar() {
               </NavLink>
             </li>
           </ul>
+          <form className="d-flex" role="search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button className="btn btn-outline-dark" type="submit">
+              Search
+            </button>
+          </form>
           <div className="buttons mx-2">
-            <NavLink to="#" className="btn btn-outline-dark">
-              <i className="fa fa-shopping-cart me-1"></i>Bids (0)
+            <NavLink to="/cart" className="btn btn-outline-dark">
+              <i className="fa fa-shopping-cart me-1"></i>Bids ({state.length})
             </NavLink>
           </div>
         </div>
