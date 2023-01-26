@@ -33,7 +33,7 @@ const NewPlayer = () => {
 
 
     return ( 
-        <div className=" player-form container text-center d-flex justify-content-around m-5 p-5 border border-dark-subtle border-2 rounded ">
+        <div style={{"color":"white"}} className=" player-form container text-center d-flex justify-content-around m-5 p-5 border border-dark-subtle border-2 rounded ">
             <form action="POST" onSubmit={handleSubmit}>
                 {/* type-select */}
                 <div className="mb-3">
@@ -169,7 +169,7 @@ const NewPlayer = () => {
                 <div className="mb-3">
                 <label htmlFor="salary" className="form-label">salary</label>
                 <input 
-                    type="number" 
+                    type="text" 
                     id="salary"
                     value={salary}
                     onChange={(ev)=> setSalary(ev.target.value)}
