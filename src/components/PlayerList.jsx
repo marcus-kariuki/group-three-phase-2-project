@@ -1,8 +1,12 @@
 import { useNavigate, useParams } from "react-router-dom";
+import { useState } from "react";
 
 const PlayerList = ({ players, title }) => {
-  let navigate = useNavigate();
-  let { id } = useParams();
+    let navigate = useNavigate();
+    let { id } = useParams();
+
+    const [searchTerm, setSearchTerm] = useState('')
+
   return (
     <div>
       <div className="card text-bg-dark border-0">
@@ -31,8 +35,15 @@ const PlayerList = ({ players, title }) => {
         <input 
             type="text" 
             placeholder="Search player..."
+            onChange={(ev)=> setSearchTerm(ev.target.value)}
         />
-        {players.map((player) => {
+        {players.filter((player)=>{
+            if (searchTerm === ""){
+                return player
+            } else if (player.name.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                return player
+            }
+        }).map((player) => {
           const handleDelete = () => {
             fetch(
               `http://localhost:3000/players/${player.id}`,
