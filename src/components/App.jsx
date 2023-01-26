@@ -23,6 +23,8 @@ function App() {
         <Route exact path="/players/:id" element={<Player />} />
         <Route exact path = "/newplayer" element= {<NewPlayer />} />
         <Route exact path = "/cart" element = {<Cart />} />
+        <Route exact path = "/about" element = {<About aboutData={aboutData}/>}/>
+       
       </Routes>
     </>
   );
