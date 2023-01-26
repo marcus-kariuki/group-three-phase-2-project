@@ -51,12 +51,13 @@ function Navbar() {
                 About
               </NavLink>
             </li>
+            <NavLink className="nav-link" to="/newplayer">
+                Add Player
+              </NavLink>
             <li className="nav-item">
             <p>{aboutData.title}</p>
             <p>{aboutData.description}</p>
-              <NavLink className="nav-link" to="/newplayer">
-                Add Player
-              </NavLink>
+              
             </li>
           </ul>
           <div className="buttons mx-2">
