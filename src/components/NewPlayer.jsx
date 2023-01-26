@@ -15,6 +15,12 @@ const NewPlayer = () => {
     const [playerValue, setPlayerValue]= useState('')
     const [foot, setFoot]= useState('')
     const [salary, setSalary]= useState(0)
+    const [pace, setPace]= useState(0)
+    const [shooting, setShooting]= useState(0)
+    const [passing, setPassing]= useState(0)
+    const [dribbling, setDribbling]= useState(0)
+    const [defending, setDefending]= useState(0)
+    const [physical, setPhysical]= useState(0)
     
     const handleSubmit = (ev)=>{
         ev.preventDefault()
