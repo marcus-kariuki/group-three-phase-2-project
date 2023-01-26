@@ -5,3 +5,11 @@ body{
 .navbar-nav a{
     font-size: 18px;
 }
+.about-info {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: rgb(4, 8, 253);
+    
+  }
+  
