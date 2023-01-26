@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://free4kwallpapers.com/uploads/originals/2020/02/27/beautiful-stadium-photo-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
