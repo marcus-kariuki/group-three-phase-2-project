@@ -38,7 +38,7 @@ const Player = () => {
                 src={player.image}
                 alt={player.name}
                 height="700px"
-                width="650px"
+                width="550px"
     
 
               />
