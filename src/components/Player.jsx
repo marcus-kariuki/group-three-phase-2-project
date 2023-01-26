@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import { useDispatch } from 'react-redux';
+import { addCart } from '../redux/action';
 import { useParams } from 'react-router-dom';
 
 const Player = () => {
@@ -6,11 +8,16 @@ const Player = () => {
     const [player, setPlayer] = useState([]);
     const [loading, setLoading] = useState(false);
 
+    const dispatch = useDispatch();
+    const addPlayer = (player) => {
+      dispatch(addCart(player));
+    } 
+
     useEffect(() => {
             setLoading(true);
             fetch(`http://localhost:3000/players/${id}`)
-            .then(response => response.json())
-            .then (player => setPlayer(player))
+              .then((response) => response.json())
+              .then((player) => setPlayer(player));
             setLoading(false); 
             console.log(player.image)
     }, []);
@@ -40,6 +47,7 @@ const Player = () => {
               <p className="lead fw-bolder">
                 <ul>
                 <li>Club: {player.club}</li>
+                <li>D.O.B: {player.dob}</li>
                 <li>League: {player.league}</li> 
                 <li>Salary: {player.salary}</li>
                 </ul>
@@ -60,8 +68,9 @@ const Player = () => {
               </h3>
               <p className="lead">{player.description}</p>
   
-              <button className="btn btn-dark ">
-                Bid
+              <button className="btn btn-info px-4 py-2" 
+              onClick={()=>addPlayer(player)}>
+                Bid for Player
               </button>
             </div>
           </>

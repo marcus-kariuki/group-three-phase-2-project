@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import axios from 'axios';
+import { useSelector } from "react-redux";
+
 
 function Navbar() {
+  const [aboutData, setAboutData] = useState({});
+  const state = useSelector((state)=> state.handleCart)
+
+  useEffect(() => {
+    axios.get('http://localhost:3000/players')
+      .then(res => {
+        setAboutData(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
       <div className="container">
@@ -29,31 +45,24 @@ function Navbar() {
                 All Players
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-link">
               <NavLink className="nav-link" to="/about">
+
                 About
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/newplayer">
+            <NavLink className="nav-link" to="/newplayer">
                 Add Player
               </NavLink>
+            <li className="nav-item">
+            <p>{aboutData.title}</p>
+            <p>{aboutData.description}</p>
+              
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
           <div className="buttons mx-2">
-            <NavLink to="#" className="btn btn-outline-dark">
-              <i className="fa fa-shopping-cart me-1"></i>Bids (0)
+            <NavLink to="/cart" className="btn btn-outline-dark">
+              <i className="fa fa-shopping-cart me-1"></i>Bids ({state.length})
             </NavLink>
           </div>
         </div>
