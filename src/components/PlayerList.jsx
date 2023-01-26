@@ -33,6 +33,7 @@ const PlayerList = ({ players, title }) => {
         </h2>
         {/* Search player */}
         <input 
+            className="form-control me-2"
             type="text" 
             placeholder="Search player..."
             onChange={(ev)=> setSearchTerm(ev.target.value)}
