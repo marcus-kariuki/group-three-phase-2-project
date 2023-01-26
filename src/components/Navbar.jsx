@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import axios from 'axios';
+
 
 function Navbar() {
+  const [aboutData, setAboutData] = useState({});
+
+  useEffect(() => {
+    axios.get('path/to/db.json')
+      .then(res => {
+        setAboutData(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }, []);
+
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
       <div className="container">
@@ -31,10 +46,13 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/about">
+
                 About
               </NavLink>
             </li>
             <li className="nav-item">
+            <p>{aboutData.title}</p>
+            <p>{aboutData.description}</p>
               <NavLink className="nav-link" to="/newplayer">
                 Add Player
               </NavLink>
