@@ -8,7 +8,7 @@ const Player = () => {
 
     useEffect(() => {
             setLoading(true);
-            fetch(`https://dimba-api.herokuapp.com/${id}`)
+            fetch(`http://localhost:3000/players/${id}`)
               .then((response) => response.json())
               .then((player) => setPlayer(player));
             setLoading(false); 
