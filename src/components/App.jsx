@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import NewPlayer from "./NewPlayer";
 import About from "./About";
 import React, { useState } from 'react';
+import Footer from "./Footer";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route exact path = "/about" element = {<About aboutData={aboutData}/>}/>
        
       </Routes>
+      <Footer />
     </>
   );
 }
