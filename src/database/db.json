@@ -411,6 +411,38 @@
       "foot": "",
       "salary": "30,000",
       "id": 19
+    },
+    {
+      "type": "sale",
+      "name": "",
+      "height": 0,
+      "image": "",
+      "nationality": "",
+      "position": "CM",
+      "league": "",
+      "dob": "",
+      "description": "",
+      "club": "",
+      "playerValue": "",
+      "foot": "",
+      "salary": 0,
+      "id": 20
+    },
+    {
+      "type": "sale",
+      "name": "",
+      "height": 0,
+      "image": "",
+      "nationality": "",
+      "position": "CM",
+      "league": "",
+      "dob": "",
+      "description": "",
+      "club": "",
+      "playerValue": "",
+      "foot": "",
+      "salary": 0,
+      "id": 21
     }
   ]
 }

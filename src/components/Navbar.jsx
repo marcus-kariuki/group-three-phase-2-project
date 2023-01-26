@@ -9,7 +9,7 @@ function Navbar() {
   const state = useSelector((state)=> state.handleCart)
 
   useEffect(() => {
-    axios.get('path/to/db.json')
+    axios.get('http://localhost:3000/players')
       .then(res => {
         setAboutData(res.data);
       })
@@ -45,7 +45,7 @@ function Navbar() {
                 All Players
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-link">
               <NavLink className="nav-link" to="/about">
 
                 About
