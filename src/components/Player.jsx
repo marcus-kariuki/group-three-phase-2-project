@@ -8,9 +8,9 @@ const Player = () => {
 
     useEffect(() => {
             setLoading(true);
-            fetch(`http://localhost:3000/players/${id}`)
-            .then(response => response.json())
-            .then (player => setPlayer(player))
+            fetch(`https://dimba-api.herokuapp.com/${id}`)
+              .then((response) => response.json())
+              .then((player) => setPlayer(player));
             setLoading(false); 
             console.log(player.image)
     }, []);
@@ -34,12 +34,13 @@ const Player = () => {
 
               />
             </div>
-            <div className="col-md-6">
-              <h4 className="text-uppercase text-black-50">{player.type}</h4>
+            <div className="col-md-6 text-white">
+              <h4 className="text-uppercase text-white-50">{player.type}</h4>
               <h1 className="display-5">{player.name}</h1>
               <p className="lead fw-bolder">
                 <ul>
                 <li>Club: {player.club}</li>
+                <li>D.O.B: {player.dob}</li>
                 <li>League: {player.league}</li> 
                 <li>Salary: {player.salary}</li>
                 </ul>
@@ -60,7 +61,7 @@ const Player = () => {
               </h3>
               <p className="lead">{player.description}</p>
   
-              <button className="btn btn-dark">
+              <button className="btn btn-dark ">
                 Bid
               </button>
             </div>
