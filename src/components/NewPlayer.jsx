@@ -24,7 +24,7 @@ const NewPlayer = () => {
     
     const handleSubmit = (ev)=>{
         ev.preventDefault()
-        const player = {type, name, height, image, nationality, position, league, dob, description, club, playerValue, foot, salary} 
+        const player = {type, name, height, image, nationality, position, league, dob, description, club, playerValue, foot, salary, pace, shooting, passing, dribbling, defending, physical} 
 
         fetch('http://localhost:3000/players', {
             method: 'POST', 
@@ -40,6 +40,7 @@ const NewPlayer = () => {
 
     return ( 
         <div className=" player-form  border border-dark-subtle border-2 rounded ">
+            <h2>Add a New Player to the Transfer Pool</h2>
             <form action="POST" onSubmit={handleSubmit}>
                 {/* type-select */}
                 <div className="mb-3">
@@ -182,6 +183,72 @@ const NewPlayer = () => {
                 />
                 </div>
 
+                {/* pace */}
+                <div className="mb-3">
+                <label htmlFor="pace" className="form-label">pace</label>
+                <input 
+                    type="number" 
+                    id="pace"
+                    value={pace}
+                    onChange={(ev)=> setPace(ev.target.value)}
+                />
+                </div>
+
+                {/* shooting */}
+                <div className="mb-3">
+                <label htmlFor="shooting" className="form-label">shooting</label>
+                <input 
+                    type="number" 
+                    id="shooting"
+                    value={shooting}
+                    onChange={(ev)=> setShooting(ev.target.value)}
+                />
+                </div>
+
+                {/* passing */}
+                <div className="mb-3">
+                <label htmlFor="passing" className="form-label">passing</label>
+                <input 
+                    type="number" 
+                    id="passing"
+                    value={passing}
+                    onChange={(ev)=> setPassing(ev.target.value)}
+                />
+                </div>
+
+                {/* dribbling */}
+                <div className="mb-3">
+                <label htmlFor="dribbling" className="form-label">dribbling</label>
+                <input 
+                    type="number" 
+                    id="dribbling"
+                    value={dribbling}
+                    onChange={(ev)=> setDribbling(ev.target.value)}
+                />
+                </div>
+
+                {/* defending */}
+                <div className="mb-3">
+                <label htmlFor="defending" className="form-label">defending</label>
+                <input 
+                    type="number" 
+                    id="defending"
+                    value={defending}
+                    onChange={(ev)=> setDefending(ev.target.value)}
+                />
+                </div>
+
+
+                {/* physical */}
+                <div className="mb-3">
+                <label htmlFor="physical" className="form-label">physical</label>
+                <input 
+                    type="number" 
+                    id="physical"
+                    value={physical}
+                    onChange={(ev)=> setPhysical(ev.target.value)}
+                />
+                </div>
 
                 {/* description */}
                 <div className="mb-3">
