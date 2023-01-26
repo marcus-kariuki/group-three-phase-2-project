@@ -70,10 +70,10 @@ const Player = () => {
               </h3>
               <p className="lead">{player.description}</p>
   
-              <button className="btn btn-info px-4 py-2" 
+              {/* <button className="btn btn-info px-4 py-2" 
               onClick={()=>addPlayer(player)}>
                 Bid for Player
-              </button>
+              </button> */}
             </div>
           </>
         );
