@@ -382,6 +382,52 @@
       "dribbling":90,
       "defending":45,
       "physical":75
+    },
+
+    {
+      "id": 17,
+      "type": "sale",
+      "name": "William Saliba",
+      "height":"6'3 | 193cm",
+      "image": "./images/william-saliba.png",
+      "nationality": "France",
+      "position":"RW",
+      "league":"Premier League",
+      "dob": "2001-03-24",
+      "description": "Saliba began playing football at the age of six, coached by the father of Kylian Mbappé.[4] He eventually moved south to Saint-Étienne in 2016,[5] and signed his first contract at age 17, in May 2018.[6] Saliba then made his professional debut on 25 September 2018, featuring in a 3–2 Ligue 1 win over Toulouse.[7] He made 13 starting appearances in his first season at Saint-Étienne.On 25 July 2019, Arsenal announced that Saliba had signed a long-term contract with the club.[8] Media reported a contract duration of five years and that the transfer fee amounted to £27 million.[11] Arsenal faced competition from rivals Tottenham Hotspur to complete the deal, with both clubs meeting Saint-Étienne's valuation of the player, however, Saliba chose to join Arsenal, with the club's interest in Saliba dating back to late 2018. ", 
+      "club":"Arsenal F.C",
+      "value": "54M",
+      "foot":"Right",
+      "salary": "$61,000",
+      "pace":81,
+      "shooting":39,
+      "passing":67,
+      "dribbling":72,
+      "defending":82,
+      "physical":79
+    },
+
+    {
+      "id": 18,
+      "type": "sale",
+      "name": "Manuel Locatelli",
+      "height":"6'0 | 185cm",
+      "image": "./images/locatelli.jpg",
+      "nationality": "Italy",
+      "position":"CDM",
+      "league":"Serie A",
+      "dob": "1998-01-08",
+      "description": " an Italian professional footballer who plays as a midfielder for Serie A club Juventus, on loan from Sassuolo, and the Italy national team.On 18 August 2021, Juventus announced the signing of Locatelli on an initial two-year loan, with Juventus holding an obligation to then purchase the player for €25 million payable over three years plus €12.5 million in potential add-ons.[23] At Juventus, Locatelli reunited with Massimiliano Allegri, who had once been the head coach of Milan and called up Locatelli to train with the senior team in 2013 aged 15.", 
+      "club":"Juventus",
+      "value": "40M",
+      "foot":"Right",
+      "salary": "$95,000",
+      "pace":62,
+      "shooting":70,
+      "passing":80,
+      "dribbling":78,
+      "defending":78,
+      "physical":79
     }
   ]
 }
