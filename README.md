@@ -26,10 +26,6 @@ unfamiliar classNames on some components, don't sweat! That's coming from
 Bootstrap UI and you shouldn't need to touch it.
 
 
-## Endpoints
-
-The base URL for your backend is: `http://localhost:3000`
-
 ## Core Deliverables
 
 As a user/manager, I should be able to:
