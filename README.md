@@ -18,7 +18,7 @@ After unbundling the project:
 1. Run `npm install` in your terminal.
 
 Make sure to open
-[https://group-three-phase-2-project-5shocnyjp-marcus-kariuki.vercel.app/](Dimba.org) in the
+[Dimba.org](https://group-three-phase-2-project-5shocnyjp-marcus-kariuki.vercel.app/) in the
 browser to verify that your backend is working before you proceed!
 
 The app uses [Bootstrap](https://bootstrap-ui.com/) for styling. If you see any
