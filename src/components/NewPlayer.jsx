@@ -33,7 +33,7 @@ const NewPlayer = () => {
 
 
     return ( 
-        <div style={{"color":"white"}} className=" player-form container text-center d-flex justify-content-around m-5 p-5 border border-dark-subtle border-2 rounded ">
+        <div className=" player-form  border border-dark-subtle border-2 rounded ">
             <form action="POST" onSubmit={handleSubmit}>
                 {/* type-select */}
                 <div className="mb-3">

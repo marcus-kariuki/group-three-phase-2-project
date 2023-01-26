@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import axios from 'axios';
+import { useSelector } from "react-redux";
+
 
 function Navbar() {
+  const [aboutData, setAboutData] = useState({});
+  const state = useSelector((state)=> state.handleCart)
+
+  useEffect(() => {
+    axios.get('path/to/db.json')
+      .then(res => {
+        setAboutData(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
       <div className="container">
@@ -31,10 +47,13 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/about">
+
                 About
               </NavLink>
             </li>
             <li className="nav-item">
+            <p>{aboutData.title}</p>
+            <p>{aboutData.description}</p>
               <NavLink className="nav-link" to="/newplayer">
                 Add Player
               </NavLink>
@@ -47,13 +66,13 @@ function Navbar() {
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="btn btn-outline-success" type="submit">
+            <button className="btn btn-outline-dark" type="submit">
               Search
             </button>
           </form>
           <div className="buttons mx-2">
-            <NavLink to="#" className="btn btn-outline-dark">
-              <i className="fa fa-shopping-cart me-1"></i>Bids (0)
+            <NavLink to="/cart" className="btn btn-outline-dark">
+              <i className="fa fa-shopping-cart me-1"></i>Bids ({state.length})
             </NavLink>
           </div>
         </div>
