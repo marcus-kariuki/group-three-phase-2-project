@@ -27,6 +27,11 @@ const PlayerList = ({ players, title }) => {
         <h2 className="text-center py-5 text-black fw-bolder text-white">
           {title}
         </h2>
+        {/* Search player */}
+        <input 
+            type="text" 
+            placeholder="Search player..."
+        />
         {players.map((player) => {
           const handleDelete = () => {
             fetch(
