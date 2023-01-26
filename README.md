@@ -16,21 +16,15 @@ list of available players for transfer, among other features.
 After unbundling the project:
 
 1. Run `npm install` in your terminal.
-2. Run `npm run server`. This will run your backend on port `3000`.
-3. In a new terminal, run `npm start`. This will run your React app on port `3000`.
 
 Make sure to open
-[http://localhost:3000/players](http://localhost:3000/players) in the
+[Dimba.org](https://group-three-phase-2-project-5shocnyjp-marcus-kariuki.vercel.app/) in the
 browser to verify that your backend is working before you proceed!
 
 The app uses [Bootstrap](https://bootstrap-ui.com/) for styling. If you see any
 unfamiliar classNames on some components, don't sweat! That's coming from
 Bootstrap UI and you shouldn't need to touch it.
 
-
-## Endpoints
-
-The base URL for your backend is: `http://localhost:3000`
 
 ## Core Deliverables
 
