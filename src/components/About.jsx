@@ -2,7 +2,7 @@ import React from "react";
 
 function About({aboutData}) {
   return (
-    <div>
+    <div style={{"color": "white"}}>
       <h1>About Us</h1>
       <p>Here is some information about our organization our company
         Our company is based in Nairobi Kenya and with offices along ngong road inside the 
