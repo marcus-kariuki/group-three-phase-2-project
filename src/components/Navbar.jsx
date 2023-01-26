@@ -48,7 +48,7 @@ function Navbar() {
             <li className="nav-link">
               
             </li>
-            <NavLink className="nav-link" to="/about">
+              <NavLink className="nav-link" to="/about">
 
                 About
               </NavLink>
