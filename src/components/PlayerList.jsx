@@ -24,12 +24,17 @@ const PlayerList = ({ players, title }) => {
         </div>
       </div>
       <div className="row">
-        <h2 className="text-center py-5 text-black fw-bolder text-white">{title}</h2>
+        <h2 className="text-center py-5 text-black fw-bolder text-white">
+          {title}
+        </h2>
         {players.map((player) => {
           const handleDelete = () => {
-            fetch(`http://localhost:3000/players/${player.id}`, {
-              method: "DELETE",
-            });
+            fetch(
+              `http://localhost:3000/players/${player.id}`,
+              {
+                method: "DELETE",
+              }
+            );
           };
           return (
             <div
