@@ -8,9 +8,9 @@ const Player = () => {
 
     useEffect(() => {
             setLoading(true);
-            fetch(`http://localhost:3000/players/${id}`)
-            .then(response => response.json())
-            .then (player => setPlayer(player))
+            fetch(`https://dimba-api.herokuapp.com/${id}`)
+              .then((response) => response.json())
+              .then((player) => setPlayer(player));
             setLoading(false); 
             console.log(player.image)
     }, []);
