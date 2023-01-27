@@ -9,11 +9,12 @@ function Navbar() {
   const state = useSelector((state)=> state.handleCart)
 
   useEffect(() => {
-    axios.get('http://localhost:3000/players')
-      .then(res => {
+    axios
+      .get("https://dimba-api.herokuapp.com/players")
+      .then((res) => {
         setAboutData(res.data);
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   }, []);
