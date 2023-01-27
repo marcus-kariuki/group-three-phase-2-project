@@ -24,32 +24,36 @@ code {
   margin: 3rem auto;
   text-align: center;
   color: white;
-  background-color: hsla(0, 0%, 0%, 0.488);
+  background-color: hsla(0, 0%, 0%, 0.48);
   
 }
 
 .player-form label {
   text-align: left;
-  display: block;
+  display: flex;
+  font-size: 20px;
 }
 
 .player-form h2 {
   font-size: 20px;
   color: white;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 
 
 .player-form input, .player-form textarea, .player-form select {
   width: 100%;
+  color: white;
   padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
   box-sizing: border-box;
   display: block;
+  background-color: transparent;
 }
 
-.about-container {
+/* .about-container {
   background-color: #F5F5F5;
   padding: 20px;
 }
@@ -71,7 +75,7 @@ code {
 .about-description {
   font-size: 1.2rem;
   line-height: 1.5;
-}
+} */
 
 
 

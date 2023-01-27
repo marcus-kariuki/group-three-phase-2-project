@@ -1,22 +1,36 @@
 import React, {Fragment} from "react";
 
+
 import "../stylesheet/App.css";
 
 function About() {
   return (
     <Fragment>
-    <div className="about-container">
-      <h1 className="about-title" style={{color: "black"}}>About Us</h1>
-  
-    </div>
-    <div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-       Eveniet nostrum laborum porro pariatur minima tenetur.
-       Adipisci obcaecati placeat ex veritatis est delectus sunt, 
-       quam doloribus nemo sed perferendis ipsa corporis?</p>
-       <h3>I Am Web Designer And Developer Having 10 Year Of Experience</h3>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae accusantium totam mollitia facilis debitis porro sunt repellat eveniet dignissimos.</p>
-    </div>
+      <div className="content">
+    <div className="col-md-7 bg-dark text-center text-white">
+          <h4 className="text-uppercase text-white-50"></h4>
+          <h1 className="display-5">ABOUT US</h1>
+          <p className="lead fw-bolder">
+           
+          Our Group Members include:
+          <ul>
+            <li>-Marcus Macharia</li>
+            <li>-Liz Wambeti </li>
+            <li>-Emmanuel Chacha </li>
+            <li>-Melvin Kukwan </li>
+           
+            
+
+          </ul>
+
+
+             DIMBA.org is a platform that provides the manager with a comprehensive list of all players available for transfer.<br/>The manager can see a list of all players displayed in form of cards.
+             Then the manager can click on each individual player to view their personal statistics.<br/>
+            On the home section, the Manager has the ability to filter and search a specific player of their choosing.
+            The last function is to add new players to the transfer list.There is a form provided in the Add Player page where the manager inputs the required information <br/>
+            </p>
+        </div>
+        </div>
     </Fragment>
   );
 }
