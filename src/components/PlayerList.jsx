@@ -78,12 +78,8 @@ const PlayerList = ({ players, title }) => {
                 <h5 className="card-title">Name: {player.name}</h5>
                 <h6>Country:{player.nationality}</h6>
                 <h6>Current Club:{player.club}</h6>
-                <ul>
-                  <li>Deal: {player.type}</li>
-                  <li>Position: {player.position}</li>
-                  <li>Weekly Salary: {player.salary}</li>
-                  <li>Market Value: {player.value} Euros</li>
-                </ul>
+                <h6>Offer:{player.type}</h6>
+                <h6>Position :{player.position}</h6>
 
                 <div className="d-flex justify-content-between">
                   <button
