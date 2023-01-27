@@ -34,16 +34,16 @@ const NewPlayer = () => {
         ev.preventDefault()
         const player = {type, name, height, image, nationality, position, league, dob, description, club, value, foot, salary, pace, shooting, passing, dribbling, defending, physical} 
 
-        fetch('http://localhost:3000/players', {
-            method: 'POST', 
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(player)
+        fetch("https://dimba-api.herokuapp.com/players", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(player),
         })
-        .then((res)=>{
-            navigate("/")
-            return res.json()
-        })
-        .then((data)=> console.log(data))
+          .then((res) => {
+            navigate("/");
+            return res.json();
+          })
+          .then((data) => console.log(data));
     }
 
     return (

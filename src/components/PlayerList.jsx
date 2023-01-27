@@ -47,12 +47,9 @@ const PlayerList = ({ players, title }) => {
         }).map((player) => {
           const handleDelete = () => {
 
-            fetch(
-              `http://localhost:3000/players/${player.id}`,
-              {
-                method: "DELETE",
-              }
-            )
+            fetch(`https://dimba-api.herokuapp.com/players/${player.id}`, {
+              method: "DELETE",
+            });
             // .then((res)=> res.json())
             // .then((data)=>{
 
