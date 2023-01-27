@@ -3,9 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-
-
-
+import { useNavigate } from 'react-router-dom';
 
 
 const NewPlayer = () => {
@@ -28,8 +26,11 @@ const NewPlayer = () => {
     const [dribbling, setDribbling]= useState(0)
     const [defending, setDefending]= useState(0)
     const [physical, setPhysical]= useState(0)
+
+    let navigate = useNavigate()
     
     const handleSubmit = (ev)=>{
+        
         ev.preventDefault()
         const player = {type, name, height, image, nationality, position, league, dob, description, club, value, foot, salary, pace, shooting, passing, dribbling, defending, physical} 
 
@@ -39,6 +40,7 @@ const NewPlayer = () => {
             body: JSON.stringify(player)
         })
         .then((res)=>{
+            navigate("/")
             return res.json()
         })
         .then((data)=> console.log(data))
@@ -51,24 +53,45 @@ const NewPlayer = () => {
 
             <Form.Group as={Col} controlId="formGridName">
               <Form.Label>Full Names</Form.Label>
-              <Form.Control type="text" placeholder="Enter Full Names" />
+              <Form.Control 
+              type="text" 
+              placeholder="Enter Full Names"
+              value={name}
+                onChange={(ev)=> setName(ev.target.value)}
+              />
             </Form.Group>
             <Form.Group as={Col} controlId="formGridClub">
               <Form.Label>Club</Form.Label>
-              <Form.Control type="text" placeholder="Club Name" />
+              <Form.Control 
+              type="text" 
+              placeholder="Club Name" 
+              value={club}
+               onChange={(ev)=> setClub(ev.target.value)}
+              />
             </Form.Group>
           </Row>
 
            <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridLeague">
               <Form.Label>League</Form.Label>
-              <Form.Control type="text" placeholder="Enter League" />
+              <Form.Control 
+              type="text" 
+              placeholder="Enter League" 
+              value={league}
+               onChange={(ev)=>setLeague(ev.target.value)}
+              />
             </Form.Group>
 
     
             <Form.Group as={Col} controlId="formGridDate">
               <Form.Label>D.O.B</Form.Label>
-              <Form.Control type="date" placeholder="yy-m-d" />
+              <Form.Control 
+              type="date" 
+              placeholder="yy-m-d"
+              value={dob}
+                    onChange={(ev)=> setDob(ev.target.value)}
+
+              />
             </Form.Group>
           </Row>
 
@@ -76,12 +99,23 @@ const NewPlayer = () => {
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridSalary">
               <Form.Label>Salary</Form.Label>
-              <Form.Control type="number/text" placeholder="salary" />
+              <Form.Control 
+              type="number/text" 
+              placeholder="salary"
+              value={salary}
+                    onChange={(ev)=> setSalary(ev.target.value)}
+
+              />
             </Form.Group>
     
             <Form.Group as={Col} controlId="formGridDeal">
               <Form.Label>Deal</Form.Label>
-              <Form.Select defaultValue="Sale">
+              <Form.Select 
+                defaultValue="Sale"
+                value={type}
+                onChange={(ev)=> setType(ev.target.value)}
+
+                >
                 <option>Sale</option>
                 <option>Loan</option>
               </Form.Select>
@@ -89,7 +123,12 @@ const NewPlayer = () => {
     
             <Form.Group as={Col} controlId="formGridMarketValue">
               <Form.Label>Market Value</Form.Label>
-              <Form.Control type="number/text" placeholder="" />
+              <Form.Control 
+              type="number/text" 
+              placeholder="" 
+              value={value}
+                    onChange={(ev)=> setValue(ev.target.value)}
+              />
             </Form.Group>
           </Row>
 
@@ -97,13 +136,23 @@ const NewPlayer = () => {
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridHeight">
               <Form.Label>Height</Form.Label>
-              <Form.Control type="number/text" placeholder="height" />
+              <Form.Control 
+              type="number/text" 
+              placeholder="height" 
+              value={height}
+                    onChange={(ev)=> setHeight(ev.target.value)}
+
+              />
             </Form.Group>
 
 
             <Form.Group as={Col} controlId="formGridFoot">
               <Form.Label>Strong Foot</Form.Label>
-              <Form.Select defaultValue="Right">
+              <Form.Select 
+              defaultValue="Right"
+              value={foot}
+                    onChange={(ev)=> setFoot(ev.target.value)}
+              >
                 <option>Right</option>
                 <option>Left</option>
               </Form.Select>
@@ -112,19 +161,36 @@ const NewPlayer = () => {
 
             <Form.Group as={Col} controlId="formGridNationality">
               <Form.Label>Nationality</Form.Label>
-              <Form.Control type="text" placeholder="nationality" />
+              <Form.Control 
+              type="text" 
+              placeholder="nationality" 
+              value={nationality}
+                    onChange={(ev)=> setNationality(ev.target.value)}
+
+              />
             </Form.Group>
     
     
             <Form.Group as={Col} controlId="formGridPosition">
               <Form.Label>Position</Form.Label>
-              <Form.Control type="text" placeholder="position" />
+              <Form.Control 
+              type="text" 
+              placeholder="position" 
+              value={position}
+                    onChange={(ev)=> setPosition(ev.target.value)}
+
+              />
             </Form.Group>
           </Row>
 
           <Form.Group as={Col} controlId="formGridImage">
               <Form.Label>Image</Form.Label>
-              <Form.Control type="url" placeholder="copy image url" />
+              <Form.Control 
+              type="url" 
+              placeholder="copy image url"
+              value={image}
+                    onChange={(ev)=>setImage(ev.target.value)}
+              />
             </Form.Group>
             
 
@@ -133,19 +199,34 @@ const NewPlayer = () => {
 
             <Form.Group as={Col} controlId="formGridPace">
               <Form.Label>Pace</Form.Label>
-              <Form.Control type="number" placeholder="Pace" />
+              <Form.Control 
+              type="number" 
+              placeholder="Pace"
+              value={pace}
+                    onChange={(ev)=> setPace(ev.target.value)}
+              />
             </Form.Group>
 
 
             <Form.Group as={Col} controlId="formGridShooting">
               <Form.Label>Shooting</Form.Label>
-              <Form.Control type="number" placeholder="Shooting" />
+              <Form.Control 
+              type="number" 
+              placeholder="Shooting"
+              value={shooting}
+                    onChange={(ev)=> setShooting(ev.target.value)}
+              />
             </Form.Group>
 
 
             <Form.Group as={Col} controlId="formGridPassing">
               <Form.Label>Passing</Form.Label>
-              <Form.Control type="number" placeholder="passing" />
+              <Form.Control 
+              type="number" 
+              placeholder="passing"
+              value={passing}
+                    onChange={(ev)=> setPassing(ev.target.value)}
+              />
             </Form.Group>
 
           </Row>
@@ -154,19 +235,34 @@ const NewPlayer = () => {
                 
                 <Form.Group as={Col} controlId="formGridDribbling">
                   <Form.Label>Dribbling</Form.Label>
-                  <Form.Control type="number" placeholder="dribbling" />
+                  <Form.Control 
+                  type="number" 
+                  placeholder="dribbling"
+                  value={dribbling}
+                    onChange={(ev)=> setDribbling(ev.target.value)}
+                  />
                 </Form.Group>
     
     
                 <Form.Group as={Col} controlId="formGridDefending">
                   <Form.Label>Defending</Form.Label>
-                  <Form.Control type="number" placeholder="defending" />
+                  <Form.Control 
+                  type="number" 
+                  placeholder="defending" 
+                  value={defending}
+                    onChange={(ev)=> setDefending(ev.target.value)}
+                  />
                 </Form.Group>
     
     
                 <Form.Group as={Col} controlId="formGridPhysical">
                   <Form.Label>Physical</Form.Label>
-                  <Form.Control type="number" placeholder="physical" />
+                  <Form.Control 
+                  type="number" 
+                  placeholder="physical" 
+                  value={physical}
+                    onChange={(ev)=> setPhysical(ev.target.value)}
+                  />
                 </Form.Group>
     
               </Row>
@@ -175,7 +271,13 @@ const NewPlayer = () => {
 
               <Form.Group as={Col} controlId="formGridDescription">
                   <Form.Label>Description</Form.Label>
-                  <Form.Control as="textarea" placeholder="description" style={{height:'100px'}}/>
+                  <Form.Control 
+                  as="textarea" 
+                  placeholder="description" 
+                  style={{height:'100px'}}
+                  value={description}
+                    onChange={(ev)=> setDescription(ev.target.value)}
+                  />
                 </Form.Group>
 
               </Row>
