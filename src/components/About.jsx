@@ -1,32 +1,23 @@
-import React from "react";
+import React, {Fragment} from "react";
 
 import "../stylesheet/App.css";
 
-function About({aboutData}) {
+function About() {
   return (
+    <Fragment>
     <div className="about-container">
       <h1 className="about-title" style={{color: "black"}}>About Us</h1>
-      <p className="about-info" style={{color: "black"}}>Here is some information about our organization.
-        Our company is based in Nairobi Kenya and with offices along Ngong road inside the 
-        Ngong lane plaza.The CEO of our company is named Marcus Kariuki, there are other three co-founders
-        that are responsible for handling matters related to this website, we give managers and coaches
-        of every team to look into the available players we have for transfer you can check the 
-        player by navigating through the players section next to this about section.  .{aboutData.title}</p>
-      <p className="about-info" style={{color: "black"}}>
-      Here is some information about our organization.
-        Our company is based in Nairobi Kenya and with offices along Ngong road inside the 
-        Ngong lane plaza.The CEO of our company is named Marcus Kariuki, there are other three co-founders
-        that are responsible for handling matters related to this website, we give managers and coaches
-        of every team to look into the available players we have for transfer you can check the 
-        player by navigating through the players section next to this about section.
-        Here is some information about our organization.
-        Our company is based in Nairobi Kenya and with offices along Ngong road inside the 
-        Ngong lane plaza.The CEO of our company is named Marcus Kariuki, there are other three co-founders
-        that are responsible for handling matters related to this website, we give managers and coaches
-        of every team to look into the available players we have for transfer you can check the 
-        player by navigating through the players section next to this about section.
-        {aboutData.description}</p>
+  
     </div>
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Eveniet nostrum laborum porro pariatur minima tenetur.
+       Adipisci obcaecati placeat ex veritatis est delectus sunt, 
+       quam doloribus nemo sed perferendis ipsa corporis?</p>
+       <h3>I Am Web Designer And Developer Having 10 Year Of Experience</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae accusantium totam mollitia facilis debitis porro sunt repellat eveniet dignissimos.</p>
+    </div>
+    </Fragment>
   );
 }
 
