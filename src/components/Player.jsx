@@ -29,7 +29,7 @@ const Player = () => {
   const ShowPlayer = () => {
     return (
       <>
-        <div className="col-md-6 ">
+        <div className="col-md-6">
           <img
             src={player.image}
             alt={player.name}

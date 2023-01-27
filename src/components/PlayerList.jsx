@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
+import { Container, Form } from "react-bootstrap";
 
 const PlayerList = ({ players, title }) => {
     let navigate = useNavigate();
@@ -32,12 +33,14 @@ const PlayerList = ({ players, title }) => {
           {title}
         </h2>
         {/* Search player */}
-        <input 
-            className="form-control me-2"
-            type="text" 
-            placeholder="Search player..."
-            onChange={(ev)=> setSearchTerm(ev.target.value)}
-        />
+        <Container >
+          <Form.Control size="sm" 
+           type="text" 
+           placeholder="Search player..."
+           onChange={(ev)=> setSearchTerm(ev.target.value)}
+          />
+        </Container>
+
         {players.filter((player)=>{
             if (searchTerm === ""){
                 return player
@@ -58,7 +61,7 @@ const PlayerList = ({ players, title }) => {
           return (
             <div
               key={player.id}
-              className="card col-12 col-md-4 col-xl-3 col-xxl-2 text-start shadow m-3"
+              className="card col-12 col-md-4 col-xl-3 col-xxl-2 text-start bg-dark text-white shadow m-3"
               style={{ width: "18rem" }}
             >
               <img

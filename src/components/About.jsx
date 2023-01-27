@@ -1,32 +1,37 @@
-import React from "react";
+import React, {Fragment} from "react";
+
 
 import "../stylesheet/App.css";
 
-function About({aboutData}) {
+function About() {
   return (
-    <div className="about-container">
-      <h1 className="about-title" style={{color: "black"}}>About Us</h1>
-      <p className="about-info" style={{color: "black"}}>Here is some information about our organization.
-        Our company is based in Nairobi Kenya and with offices along Ngong road inside the 
-        Ngong lane plaza.The CEO of our company is named Marcus Kariuki, there are other three co-founders
-        that are responsible for handling matters related to this website, we give managers and coaches
-        of every team to look into the available players we have for transfer you can check the 
-        player by navigating through the players section next to this about section.  .{aboutData.title}</p>
-      <p className="about-info" style={{color: "black"}}>
-      Here is some information about our organization.
-        Our company is based in Nairobi Kenya and with offices along Ngong road inside the 
-        Ngong lane plaza.The CEO of our company is named Marcus Kariuki, there are other three co-founders
-        that are responsible for handling matters related to this website, we give managers and coaches
-        of every team to look into the available players we have for transfer you can check the 
-        player by navigating through the players section next to this about section.
-        Here is some information about our organization.
-        Our company is based in Nairobi Kenya and with offices along Ngong road inside the 
-        Ngong lane plaza.The CEO of our company is named Marcus Kariuki, there are other three co-founders
-        that are responsible for handling matters related to this website, we give managers and coaches
-        of every team to look into the available players we have for transfer you can check the 
-        player by navigating through the players section next to this about section.
-        {aboutData.description}</p>
-    </div>
+    <Fragment>
+      <div className="content">
+    <div className="col-md-7 bg-dark text-center text-white">
+          <h4 className="text-uppercase text-white-50"></h4>
+          <h1 className="display-5">ABOUT US</h1>
+          <p className="lead fw-bolder">
+           
+          Our Group Members include:
+          <ul>
+            <li>-Marcus Macharia</li>
+            <li>-Liz Wambeti </li>
+            <li>-Emmanuel Chacha </li>
+            <li>-Melvin Kukwan </li>
+           
+            
+
+          </ul>
+
+
+             DIMBA.org is a platform that provides the manager with a comprehensive list of all players available for transfer.<br/>The manager can see a list of all players displayed in form of cards.
+             Then the manager can click on each individual player to view their personal statistics.<br/>
+            On the home section, the Manager has the ability to filter and search a specific player of their choosing.
+            The last function is to add new players to the transfer list.There is a form provided in the Add Player page where the manager inputs the required information <br/>
+            </p>
+        </div>
+        </div>
+    </Fragment>
   );
 }
 
